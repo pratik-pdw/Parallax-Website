@@ -1,0 +1,121 @@
+body,html{
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.pimg2{
+  background-image: url('../images/img2.jpeg');
+}
+.pimg1{
+  background-image: url('../images/img1.jpeg');
+}
+
+.pimg1,.pimg2{
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;  
+}
+
+.ptext{
+margin: 0;
+padding: 0;
+position: absolute;
+top: 50%;
+text-align: center;
+margin: auto;
+width: 100%;
+opacity: 1;
+}
+.border {
+  background: rgb(32, 31, 31);
+  color: white;
+  padding: 20px 20px;
+  border-radius: 5%;
+  opacity: 1;
+}
+
+.section{
+  text-align: center;
+  margin: auto;
+  padding: 50px 100px;
+}
+
+
+.navbar{
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding:30px 0;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  position: fixed;  
+}
+
+.navbar ul{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.navbar ul li{
+  display: inline;
+  padding: 0 40px;
+  
+}
+.navbar ul li a{
+  text-decoration: none;
+  color: #929191;
+  transition-property: color;
+  transition-duration: 1s;
+}
+
+.navbar ul li a:hover{
+ color: rgb(0, 0, 0);
+}
+button {
+  display: none;
+}
+
+@media(max-width:800px){
+  .navbar ul{
+    display: none;
+    margin-top: 10%;
+  }
+  .navbar ul li{
+    display: block;
+    padding-top:20px;
+  }
+  .navbar button{
+    position: absolute;
+    right: 5%;
+    display: inline-block;
+    margin-top:-14px;
+    background:none;
+    border:none;
+  }
+  .navbar{
+    background:#487357;
+  }
+  .navbar ul li a{
+    color:white;
+  }
+  .navbar button i{
+    font-size:25px;
+  }
+  .navbar button i{
+    color:white;
+  }
+  .navbar{
+    z-index: 1000;
+  }
+  .section{
+    text-align: center;
+    margin: auto;
+    padding: 50px 20px;
+  }
+}
